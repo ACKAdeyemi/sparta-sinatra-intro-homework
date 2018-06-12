@@ -1,36 +1,36 @@
-class BooksController < Sinatra::Base
+class AuthorsController < Sinatra::Base
 
   configure :development do
     register Sinatra::Reloader
   end
 
   # Index
-  get '/books' do
-    '<h1>Books Index</h1>'
+  get '/authors' do
+    '<h1>Authors Index</h1>'
   end
   # New
-  get '/books/new' do
+  get '/authors/new' do
     "<h1>New Page</h1>"
   end
   # Create
-  post '/books' do
+  post '/authors' do
     "CREATE"
   end
   # Show
-  get '/books/:id' do
+  get '/authors/:id' do
     id = params[:id]
     "<h1>Show page for #{ id }</h1>"
   end
   # Edit
-  get '/books/:id/edit' do
+  get '/authors/:id/edit' do
     "<h1>Edit page for #{ params[:id] }</h1>"
   end
   # Update
-  put '/books/:id' do
+  put '/authors/:id' do
     "Update #{ params[:id] }"
   end
   # Destroy
-  delete '/books/:id' do
+  delete '/authors/:id' do
     "Destroy #{ params[:id] }"
   end
 
