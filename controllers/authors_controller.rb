@@ -5,32 +5,32 @@ class AuthorsController < Sinatra::Base
   end
 
   # Index
-  get '/author' do
-    '<h1>Index</h1>'
+  get '/authors' do
+    '<h1>Authors Index</h1>'
   end
   # New
-  get '/author/new' do
+  get '/authors/new' do
     "<h1>New Page</h1>"
   end
   # Create
-  post '/author' do
+  post '/authors' do
     "CREATE"
   end
   # Show
-  get '/author/:id' do
+  get '/authors/:id' do
     id = params[:id]
     "<h1>Show page for #{ id }</h1>"
   end
   # Edit
-  get '/author/:id/edit' do
+  get '/authors/:id/edit' do
     "<h1>Edit page for #{ params[:id] }</h1>"
   end
   # Update
-  put '/author/:id' do
+  put '/authors/:id' do
     "Update #{ params[:id] }"
   end
   # Destroy
-  delete '/author/:id' do
+  delete '/authors/:id' do
     "Destroy #{ params[:id] }"
   end
 

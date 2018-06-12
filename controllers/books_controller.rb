@@ -6,7 +6,7 @@ class BooksController < Sinatra::Base
 
   # Index
   get '/books' do
-    '<h1>Index</h1>'
+    '<h1>Books Index</h1>'
   end
   # New
   get '/books/new' do
